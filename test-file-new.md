@@ -1,7 +1,7 @@
 # TITLE
 
- [Here's a link](https://thislinkhas.com)
+[Here's a link] (https://thislinkhas.com)
 
- ![image](image.jpeg)
+![image] (image.jpeg)
 
- [another link](something.html)
+[another link] (something.html)
