@@ -20,7 +20,7 @@ public class MarkdownParse {
                 currentIndex++;
                 continue;
             }
-            if(nextOpenBracket!=0){
+            if((nextOpenBracket!=0) && (openParen-nextCloseBracket==1)){
                 if (!(markdown.charAt(nextOpenBracket-1) == '!')) {
                     toReturn.add(markdown.substring(openParen + 1, closeParen));
                 } 
