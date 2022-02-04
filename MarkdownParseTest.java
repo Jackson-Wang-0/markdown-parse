@@ -8,10 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MarkdownParseTest {
-    @Test
-    public void addition() {
-        assertEquals(2, 1 + 1);
-    }
+    
     @Test
     public void testfile1() throws IOException {
         Path fileName = Path.of("test-file.md");
@@ -41,51 +38,7 @@ public class MarkdownParseTest {
         assertEquals(List.of(),links);
 
     }
-    @Test
-    public void testfile4() throws IOException {
-        Path fileName = Path.of("test-file4.md");
-	    String contents = Files.readString(fileName);
-        ArrayList<String> links = MarkdownParse.getLinks(contents);
-
-        assertEquals(List.of(),links);
-
-    }
-    @Test
-    public void testfile5() throws IOException {
-        Path fileName = Path.of("test-file5.md");
-	    String contents = Files.readString(fileName);
-        ArrayList<String> links = MarkdownParse.getLinks(contents);
-
-        assertEquals(List.of(),links);
-
-    }
-    @Test
-    public void testfile6() throws IOException {
-        Path fileName = Path.of("test-file6.md");
-	    String contents = Files.readString(fileName);
-        ArrayList<String> links = MarkdownParse.getLinks(contents);
-
-        assertEquals(List.of(),links);
-
-    }
-    @Test
-    public void testfile7() throws IOException {
-        Path fileName = Path.of("test-file7.md");
-	    String contents = Files.readString(fileName);
-        ArrayList<String> links = MarkdownParse.getLinks(contents);
-
-        assertEquals(List.of(),links);
-
-    }
-    @Test
-    public void testfile8() throws IOException {
-        Path fileName = Path.of("test-file8.md");
-	    String contents = Files.readString(fileName);
-        ArrayList<String> links = MarkdownParse.getLinks(contents);
-
-        assertEquals(List.of(),links);
-
-    }
+   
 
     @Test
     public void fourthFile() throws IOException{
